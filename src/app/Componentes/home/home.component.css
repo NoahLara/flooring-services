@@ -1,0 +1,228 @@
+.contenedorSlide{
+    width: 100%;
+    
+}
+
+video{
+    width: 100%;
+}
+
+.capa{
+    width:100%;
+    height: 112%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2000;
+}
+
+.services{
+    width:100%;
+    height:700px;
+    position: absolute;
+    z-index: 2000;
+    top:30vh;
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.textoBienvenida{
+    width:100%;
+    display: flex;
+    flex-flow:column;
+    text-align: center;
+    color:#fff;
+    text-shadow:3px 3px 5px #000;
+}
+
+.textoBienvenida h1{
+    font-size: 100px;   
+}
+
+
+.contenedorCartas{
+    width:100%;
+    height: 100%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center; 
+    margin:60px;
+}
+
+.carta{
+    width:30%;
+    height: 60%;
+    display:flex;
+    flex-flow:column;
+    align-items: center;
+    transition:all ease 0.2s;
+}
+
+.carta h2{
+    color:#fff;
+    text-shadow:2px 2px 5px #000;
+}
+
+
+
+
+.iconService{
+    width:50%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(28, 115, 173);
+    box-shadow:4px 4px 6px #000;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    cursor:pointer;
+    transition: all ease-out 0.2s;
+}
+.iconService:hover{
+    box-shadow:3px 3px 10px #fff;
+    transition: all ease-in 0.2s;
+}
+
+.iconService span{
+    color:#fff;
+    margin: auto;
+    font-size:150px;
+}
+
+
+@media (max-width:1300px){
+    
+    .services{
+        height:70vh;
+    }
+   
+
+    .video{
+        height:100vh;
+        border:none;
+    }
+}
+
+
+@media (max-width:1024px){
+    
+    .services{
+        top:40vh;
+        height:300px;
+    }
+    
+    .textoBienvenida h1{
+        font-size: 50px;   
+    }
+    
+    .contenedorCartas{
+        height:200px;
+        margin:20px 0px 0px 0px;
+    }
+    
+
+    .carta{
+        width:30%;
+        height: 100%;
+    }
+    .carta h2{
+        color:rgb(255, 255, 255);
+        text-shadow:-1px -1px 5px rgb(0, 0, 0);
+        font-size:20px;
+        text-align:center;
+    }
+
+    .iconService{
+        width:50%;
+        height: 200px;
+    }
+
+    .iconService span{
+        font-size:70px;
+    }
+
+    video{
+        height:100vh;
+        margin:0px;
+        padding:0px;
+    }
+
+    
+}
+
+
+@media (max-width:400px){
+
+    .contenedorSlide{
+        background-image:url(../../../assets/back3.jpg);
+        background-repeat:no-repeat;
+        background-position:50%;
+        background-size:cover;
+        height: 100vh;
+        display:flex;
+        justify-content:column;
+        flex-flow:center;
+        align-items:center;
+        transition:all ease 0.4s;
+    }
+    .services{
+        width:100%;
+        height: auto;
+        justify-content: flex-start;
+        align-items: flex-start;  
+        position: relative;
+        z-index: 0;
+        top:0;
+    }
+
+    .textoBienvenida h1{
+        font-size:30px;
+    }
+
+    .contenedorCartas{
+        justify-content: space-evenly;
+    }
+
+    .carta{
+        width:auto;
+        height:auto;
+    }
+
+    .iconService{
+        Width:auto;
+        height:auto;
+    }
+    
+    .iconService span{
+        font-size:80px;
+        padding:20px;
+    }
+
+    .capa{
+        display:none;
+    }
+
+    .carta h2{
+        text-shadow:3px 3px 6px #000;
+    }
+
+    .carta button{
+        display:none;
+    }
+
+    video{
+        display:none;
+    }
+
+
+}
+
+
+@media (max-width:360px){
+    .iconService span{
+        font-size:55px;
+        padding:20px;
+    }
+}

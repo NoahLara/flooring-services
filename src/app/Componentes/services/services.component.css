@@ -1,0 +1,164 @@
+
+.contenedorServicios h1{
+    width:100%;
+    text-align:center;
+    font-size:80px;
+    text-shadow:4px 4px 5px #000;
+    position: absolute;
+    margin-top:25px;
+    color:#fff;
+}
+
+.imagenesAbout{
+    width:100%;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+    padding:0;
+}
+
+.imgAbout:nth-child(1){
+    background-image: url(../../../assets/flooring.jpeg);
+}
+.imgAbout:nth-child(2){
+    background-image:url(../../../assets/cleaning.jpg);
+    background-position: 50%;
+}
+.imgAbout:nth-child(3){
+    background-image:url(../../../assets/painting.jpeg);
+}
+
+.imgAbout{
+    width:33.33%;
+    height:800px;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.imgAbout h3{
+    width:100%;
+    text-align:center;
+    color:#fff;
+    font-size:65px;
+    text-shadow:3px 3px 5px #000;
+}
+
+.botonCont{
+    margin-top:20px;
+}
+
+.estimadoBoton{
+    padding:1em 2em;
+    font-size:15px;
+    text-shadow:#000;
+}
+
+.estimadoBoton {
+    display:block;
+    font-family: Arial;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    border-radius: 19px;
+    -webkit-box-shadow: -2px 6px 2px #000000;
+    -moz-box-shadow: -2px 6px 2px #000;
+    box-shadow: -2px 6px 2px #000;
+    text-shadow: 0px 0px 0px #000;
+    border: solid #114e8f 2px;
+    transition: all ease 0.3s;
+}
+
+
+.estimadoBoton:hover{
+    transition: all ease 0.3s;
+    background-color: #fff;
+    color: #114e8f;
+}
+
+
+@media (max-width:1024px){
+    .contenedorServicios{
+        display:flex;
+        flex-flow:column;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+        padding-top:200px;
+        background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    }
+
+    .contenedorServicios h1{
+        width:100%;
+        text-align:center;
+        font-size:50px;
+        top:225px;
+    }
+
+    .imagenesAbout{
+        width:100%;
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content:space-around;
+    }
+    .imgAbout h3{
+        margin-top:150px;
+    }
+
+    .imgAbout:nth-child(1){
+        background-position: 50%;
+    }
+    .imgAbout:nth-child(2){
+        background-position: 65%;
+    }
+    .imgAbout:nth-child(3){
+        background-position: 20%;
+    }
+}
+
+@media (max-width:400px){
+    
+    .contenedorServicios{
+        padding-top:0px;
+        height: auto;
+    }
+
+    .contenedorServicios h1{
+        top:50px;
+        font-size:50px;
+    }
+
+    .imagenesAbout{
+        width:100%;
+        display:flex;
+        flex-flow:column;
+    }
+
+    .imgAbout{
+        width:100%;
+    }
+    .imgAbout h3{
+        
+        font-size:40px;
+        margin-top:100px;
+    }
+
+    .imgAbout:nth-child(1){
+        background-position: 50%;
+    }
+    .imgAbout:nth-child(2){
+        background-position: 65%;
+    }
+    .imgAbout:nth-child(3){
+        background-position: 20%;
+    }
+    
+}
+
+
+

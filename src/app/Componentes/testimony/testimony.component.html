@@ -1,0 +1,22 @@
+<section class="contenedorTestimony">
+  <h1>Testimonies</h1>
+    <div class="testimonios">
+        <mat-card class="cartitas"
+          data-aos="fade-up" 
+            *ngFor="let testimonio of testimonios;">
+            <mat-card-header  class="headerCard">
+              <div mat-card-avatar class="imgProfile"
+                [ngStyle]="{'background-image': 'url(' + testimonio.Img + ')'}">
+              </div>
+              <mat-card-title>{{testimonio.Nombre}}</mat-card-title>
+              <mat-card-subtitle> <b>Service offered:</b> {{testimonio.Servicio}}</mat-card-subtitle>
+            </mat-card-header> 
+            <mat-card-content>
+              <p>
+                  {{testimonio.Testimonio}}
+              </p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</section>
+<bb-footer id="footerbb"></bb-footer>

@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~alertifyjs/build/css/alertify.css";
+@import "~alertifyjs/build/css/themes/default.css";
+@import "~aos/dist/aos.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+
+
+html, body { 
+    height: 100%; 
+    background: #1c73ad;
+    scroll-behavior:smooth;
+}

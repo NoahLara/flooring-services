@@ -1,0 +1,38 @@
+
+.contenedorFlooring{
+    width:100%;
+    display:flex;
+    flex-flow:column;
+}
+
+.fondo{
+    width:100%;
+    height: 60vh;
+    background-image: url(../../../../assets/flooring.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+.infoFlooring{
+    width:100%;
+    padding:20px;
+    background: #fff;
+    display:flex;
+    flex-flow:column;
+}
+
+.infoFlooring h1{
+    width:100%;
+    font-size:50px;
+    text-align:center;
+    text-shadow: 3px 3px 5px #000;
+}
+
+.infoFlooring p{
+    width:90%;
+    font-size:20px;
+    margin:auto;
+    text-align:justify;
+}

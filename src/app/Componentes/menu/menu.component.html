@@ -1,0 +1,23 @@
+
+ <a class="menuBoton"
+        (click)="showMenu()">
+    <i class="material-icons"
+        *ngIf="show==false">menu</i>
+    <i class="material-icons"
+        *ngIf="show==true">clear</i>
+</a>
+
+<nav class="mainMenu" [class.showMenu]="show==true"> 
+    <ul>
+        <li *ngFor="let opcionMenu of opcionesMenu">
+            <a href=""
+                (click)="showMenu()"
+                [routerLink]=opcionMenu.redireccion>
+                <span class="material-icons">
+                    {{opcionMenu.icon}}
+                </span>
+                <p>{{opcionMenu.opcion}}</p>
+            </a>
+        </li>
+    </ul>
+</nav>

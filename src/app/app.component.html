@@ -1,0 +1,23 @@
+
+
+<div class="loader" *ngIf="loaded==true">
+    <h1 data-aos="fade-up">Hello! Thanks for choosing us.</h1>
+    <div data-aos="fade-up">
+        <img data-aos="fade-up"src="../assets/loader.gif" alt="cargandoLaPagina">
+    </div>
+</div>
+
+<div class="contenedor" *ngIf="loaded==false" > 
+    <header> 
+        <bb-logo id="lo" ></bb-logo>
+        <bb-llamada id="lla"></bb-llamada>
+        <bb-menu></bb-menu>
+    </header>
+    <router-outlet></router-outlet> 
+</div>
+
+
+
+
+<!-- Contraseña para Elastic Email: 552E172079DD325C8186320284D6226C4F53 -->
+

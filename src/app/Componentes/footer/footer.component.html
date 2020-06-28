@@ -1,0 +1,39 @@
+
+<div class="waveFooter"></div>
+<footer>
+    <div class="info">
+        <div class="redes">
+            <h1>Follow us!</h1>
+            <div class="contenedorRedes">
+                <a  *ngFor="let red of redes;" 
+                    href="{{red.link}}" target="blank">
+                    <i [class]=red.icon aria-hidden="true"></i>
+                </a>
+            </div>            
+        </div>
+        <div class="contenedorHorarios">
+            <h4>Attention Schedules:</h4>
+            <div class="horarios">
+                <table>
+                    <tr>
+                      <th>Days</th>
+                      <th>Working Hours</th>
+                    </tr>
+                    <tr *ngFor="let schedule of schedules;">  
+                        <td>
+                            {{schedule.day}}
+                        </td>
+                        <td>
+                            {{schedule.hour}}
+                        </td>
+                    </tr>
+                    <tr>
+                  </table>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <h3>© 2020 SQ Flooring and Painting, Inc.Todos los derechos reservados.Condiciones, Privacidad, Privacidad de CA & Derechos de autor</h3>
+    </div>
+</footer>

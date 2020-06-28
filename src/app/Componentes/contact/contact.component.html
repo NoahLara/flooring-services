@@ -1,0 +1,65 @@
+
+<section class="contenedorContacto">
+    <div class="contenedorMap">
+        <iframe
+        data-aos="fade-up"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208344.85509106473!2d-119.1587701191259!3d35.32117640804682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ea6bc8b994cb0d%3A0x59360c0998fe74c8!2sBakersfield%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2ssv!4v1592327367568!5m2!1ses!2ssv" 
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+
+    <div class="formulario">
+        <h3>No dudes es Escribirnos: </h3>
+        <form [formGroup]="contactForm" (ngSubmit)="enviarMensaje()" data-aos="fade-up">
+            <mat-form-field class="campos">
+                <mat-label class="labelForm">Name:</mat-label>
+                <input matInput  id="name" placeholder="Name and LastName" formControlName="nameContact">
+                <mat-error *ngIf="nameContact().touched && !nameContact().valid">
+                    We need your name
+                </mat-error>
+              </mat-form-field>
+              
+              <mat-form-field class="campos">
+                <mat-label class="labelForm">Telephone Number:</mat-label>
+                <input matInput  id="number" placeholder="Ex. *-******-***" 
+                    formControlName="phoneContact">               
+                <mat-error *ngIf="phoneContact().touched && !phoneContact().valid">
+                    You number is required to reply to you as far as we could.
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="campos">
+                <mat-label class="labelForm">Email</mat-label>
+                <input matInput  id="correo" placeholder="Ex. pat@example.com" 
+                    formControlName="emailContact">               
+                <mat-error *ngIf="emailContact().touched && !emailContact().valid">
+                    Email is required to reply to you as far as we could.
+                </mat-error>
+            </mat-form-field>
+              
+            <mat-form-field class="campos">
+                <mat-label class="labelForm">Reason</mat-label>
+                <input matInput  id="motivo" placeholder="Reason" formControlName="motivoContact">
+                <mat-error *ngIf="motivoContact().touched && !motivoContact().valid">
+                    Reason is required
+                </mat-error>
+            </mat-form-field>
+              
+            <mat-form-field class="campos">
+                <mat-label class="labelForm">Tell us, What do you need?:</mat-label>
+                <textarea matInput id="mensaje" 
+                    cols="30" rows="10"
+                    placeholder="Ex. pat@example.com"
+                    formControlName="mensajeContact"></textarea>
+                    <mat-error *ngIf="mensajeContact().touched && !mensajeContact().valid">
+                        Is important for us know about what do you need.
+                    </mat-error>
+            </mat-form-field>
+            <button mat-raised-button type="submit"
+                [disabled]="!contactForm.valid && isDisabled">Send</button>
+        </form>
+    </div>
+
+</section>
+<bb-footer id="footerbb"></bb-footer>

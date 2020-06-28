@@ -1,0 +1,23 @@
+<section class="contenedorSlide"> 
+    <div class="services">
+        <div class="textoBienvenida">
+            <h1 data-aos="fade-up" *ngIf="cambio==false">Welcome!</h1>
+            <h1 data-aos="fade-up" *ngIf="cambio==true">SQ Flooring and Painting</h1>
+        </div>
+        <div class="contenedorCartas">
+            <div
+                matTooltip="Read more..."
+                matTooltipPosition="below"
+                [routerLink]=servicio.link
+                class="carta" *ngFor="let servicio of servicios" data-aos="fade-up">
+                <div class="iconService">
+                    <span class="material-icons">{{servicio.icon}}</span>
+                </div>
+                <h2>{{servicio.nombre}}</h2>
+            </div>
+        </div>
+    </div>
+    <video onloadedmetadata="this.muted=true" autoplay loop>
+        <source src="../../../assets/videoCalifornia.mp4">
+    </video>
+</section>
